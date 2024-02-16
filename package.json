@@ -1,0 +1,29 @@
+{
+  "name": "lesta_test_task",
+  "version": "1.0.0",
+  "description": "Test task on Frontent position",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LugalKiEn/lesta_test_task.git"
+  },
+  "author": "LugalKiEn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LugalKiEn/lesta_test_task/issues"
+  },
+  "homepage": "https://github.com/LugalKiEn/lesta_test_task#readme",
+  "dependencies": {
+    "three": "^0.161.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.161.2",
+    "path": "^0.12.7",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

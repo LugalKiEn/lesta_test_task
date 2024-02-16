@@ -1,0 +1,11 @@
+Model Information:
+* title:	T-34-85 Soviet Medium Tank
+* source:	https://sketchfab.com/3d-models/t-34-85-soviet-medium-tank-7c5b98b1b57841aba3048df45a13b8ea
+* author:	Bogdan Kuznetsov (https://sketchfab.com/kuznetsov_bogdan)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "T-34-85 Soviet Medium Tank" (https://sketchfab.com/3d-models/t-34-85-soviet-medium-tank-7c5b98b1b57841aba3048df45a13b8ea) by Bogdan Kuznetsov (https://sketchfab.com/kuznetsov_bogdan) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

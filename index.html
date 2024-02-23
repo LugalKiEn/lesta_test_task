@@ -1,10 +1,69 @@
 <!DOCTYPE HTML>
 <html lang="ru">
     <head>
-        <link rel="stylesheet" href="/src/styles/style.css">
+        <title>Lesta Test Landing</title>
+        <link rel="stylesheet" href="./src/styles/style.css">
+        <link rel="icon" type="image/png" href="//ru-wotp.lesta.ru/static/5.130.8_ec798f/wotp_static/img/core/frontend/scss/common/img/favicon-16x16_ruby.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="//ru-wotp.lesta.ru/static/5.130.8_ec798f/wotp_static/img/core/frontend/scss/common/img/favicon-32x32_ruby.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="//ru-wotp.lesta.ru/static/5.130.8_ec798f/wotp_static/img/core/frontend/scss/common/img/favicon-96x96_ruby.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="//ru-wotp.lesta.ru/static/5.130.8_ec798f/wotp_static/img/core/frontend/scss/common/img/favicon-192x192_ruby.png" sizes="192x192">
+        <link rel="apple-touch-icon" sizes="60x60" href="//ru-wotp.lesta.ru/static/5.130.8_ec798f/wotp_static/img/core/frontend/scss/common/img/apple-touch-icon-60x60_ruby.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="//ru-wotp.lesta.ru/static/5.130.8_ec798f/wotp_static/img/core/frontend/scss/common/img/apple-touch-icon-120x120_ruby.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="//ru-wotp.lesta.ru/static/5.130.8_ec798f/wotp_static/img/core/frontend/scss/common/img/apple-touch-icon-180x180_ruby.png">
+        <link rel="mask-icon" href="//ru-wotp.lesta.ru/static/5.130.8_ec798f/wotp_static/img/core/frontend/scss/common/img/safari-pinned-16x16_ruby.svg" color="#474747">
     </head>
     <body>
-        <!-- <canvas id="webjl"></canvas> -->
-        <script type="module" src="build/main.js"></script>
+        <script type="importmap">
+            {
+                "imports": {
+                    "@tweenjs/tween.js": "/node_modules/@tweenjs/tween.js/dist/tween.es.js"
+                }
+            }
+        </script>
+        <div class="loading-banner">
+            <img class="loading-banner__logo" src="src/img/logo.png"/>
+            <div id="progressBar">
+                <div id="progressStatus"></div>
+            </div>
+        </div>
+        <div class="main-banner">
+            <div class="main-banner__container">
+                <img class="main-banner__logo" src="src/img/logo.png"/>
+                <h1 class="main-banner__header">Скачать lesta games launcher</h1>
+                <a href = "https://tanki.su/" class="main-banner__link">Стать легендой</a>
+            </div>
+        </div>
+        <div class="detail-description">
+            <div class="detail-description__container">
+                
+            </div>
+        </div>
+        <div class="instructions">
+            <div class="instructions__container">
+                <div class="instructions__container-element">
+                    <h2 class="instructions__container-element-header">Скачай и установи lesta games launcher</h2>
+                    <span class="instructions__container-element-number">1</span>
+                    <div class="instructions__container-element-text">Lorem ipsum dolor sit amet consectetur. Curabitur rhoncus pretium neque tempor ipsum amet faucibus.</div>
+                </div>
+            </div>
+        <div class="instructions__container">
+            <div class="instructions__container-element">
+                <h2 class="instructions__container-element-header">Создай аккаунт</h2>
+                <span class="instructions__container-element-number">2</span>
+                <div class="instructions__container-element-text">Lorem ipsum dolor sit amet consectetur. Curabitur rhoncus pretium neque tempor ipsum amet faucibus.</div>
+            </div>
+            
+        </div>
+        <div class="instructions__container">
+            <div class="instructions__container-element">
+                <h2 class="instructions__container-element-header">И отправляйся в бой</h2>
+                <span class="instructions__container-element-number">3</span>
+                <div class="instructions__container-element-text">Lorem ipsum dolor sit amet consectetur. Curabitur rhoncus pretium neque tempor ipsum amet faucibus.</div>
+            </div>
+        </div>
+        </div>
+        <footer class="instructions__footer">© 2009-2023 Lesta Games. All rights reserved. 12+</footer>
+        <canvas class="model-canvas"></canvas>
+        <script type="module" src="./src/js/main.js"></script>
     </body>
 </html>

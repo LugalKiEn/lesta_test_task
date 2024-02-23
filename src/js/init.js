@@ -59,7 +59,7 @@ export const init = () => {
     scene.add(light);
 
     const loader = new GLTFLoader();
-    loader.load(terrainModelURL.href, async (gltf) => {
+    loader.load(terrainModelURL.href, (gltf) => {
     const terrain = gltf.scene;
     terrain.position.x =-2
     terrain.position.y = -2.4
@@ -68,7 +68,7 @@ export const init = () => {
     terrain.rotation.y = -2
     terrain.scale.set(.7,.7,.7)
     scene.add(terrain);
-    const data = await getData("default");
+    const data = getData("default");
     renderPropTable("", data)
     loadingBanner.classList.add('closed');
     },
@@ -260,7 +260,7 @@ async function spriteClickHandler (event) {
           new TWEEN.Tween( scene.rotation ).to( {  x:  newSceneX, y:  newSceneY}, 1000 ).easing( TWEEN.Easing.Quadratic.EaseOut).start();
           new TWEEN.Tween( camera.position ).to( { z:  newCameraZ}, 1000 ).easing( TWEEN.Easing.Quadratic.EaseOut).start();
           camera.lookAt(scene.position)
-          const data = await getData(objectIntersected.name);
+          const data = getData(objectIntersected.name);
           renderPropTable(objectIntersected.name, data)
           blockRotation = true;
           break;
@@ -273,7 +273,7 @@ async function spriteClickHandler (event) {
           new TWEEN.Tween( scene.rotation ).to( {  x:  newSceneX, y:  newSceneY}, 1000 ).easing( TWEEN.Easing.Quadratic.EaseOut).start();
           new TWEEN.Tween( camera.position ).to( { z:  newCameraZ}, 1000 ).easing( TWEEN.Easing.Quadratic.EaseOut).start();
           camera.lookAt(scene.position)
-          const data = await getData(objectIntersected.name);
+          const data = getData(objectIntersected.name);
           renderPropTable(objectIntersected.name, data)
           blockRotation = true;
           break;
@@ -285,7 +285,7 @@ async function spriteClickHandler (event) {
           new TWEEN.Tween( scene.rotation ).to( {  x:  newSceneX, y:  newSceneY}, 1000 ).easing( TWEEN.Easing.Quadratic.EaseOut).start();
           new TWEEN.Tween( camera.position ).to( { z:  newCameraZ}, 1000 ).easing( TWEEN.Easing.Quadratic.EaseOut).start();
           camera.lookAt(scene.position);
-          const data = await getData(objectIntersected.name);
+          const data = getData(objectIntersected.name);
           renderPropTable(objectIntersected.name, data)
           blockRotation = true;
           break;
@@ -294,7 +294,7 @@ async function spriteClickHandler (event) {
           new TWEEN.Tween( scene.rotation ).to( {  x:  minRotationX, y:  minRotationY}, 1000 ).easing( TWEEN.Easing.Quadratic.EaseOut).start();
           new TWEEN.Tween( camera.position ).to( {x: defaultCameraXPosition, y: defaultCameraYPosition + 0, z: defaultCameraZPosition}, 1000 ).easing( TWEEN.Easing.Quadratic.EaseOut).start();
           camera.lookAt(scene.position);
-          const data = await getData("default");
+          const data = getData("default");
           renderPropTable(objectIntersected.name, data)
           blockRotation = false;
         }
